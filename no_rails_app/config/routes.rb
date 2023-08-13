@@ -7,4 +7,6 @@ Router.draw do
     puts "Path: #{env['REQUEST_PATH']}"
     'First Player'
   end
+
+  get 'players/index'
 end
