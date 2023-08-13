@@ -2,6 +2,6 @@ require_relative 'application_controller'
 
 class PlayersController < ApplicationController
   def index
-    'All Players'
+    @title = 'All Players'
   end
 end
