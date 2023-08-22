@@ -1,0 +1,16 @@
+{
+  "name": "hotwire_without_rails",
+  "version": "1.0.0",
+  "description": "using hotwire withour RoR",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "launch": "npx http-server"
+  },
+  "keywords": [
+    "hotwire",
+    "turbo"
+  ],
+  "author": "iAcay",
+  "license": "MIT"
+}
