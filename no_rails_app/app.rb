@@ -1,14 +1,25 @@
+require 'logger'
 require_relative './config/routes'
 
 class App
+  attr_reader :logger
+
+  def initialize
+    @logger = Logger.new('log/development.log')
+  end
+
   def call(env)
-    headers = { 
-      'Content-Type' => 'text/html'
-     }
+    logger.info "#{env['REQUEST_METHOD']}: #{env['REQUEST_PATH']}"
+    
+    headers = { 'Content-Type' => 'text/html' }
     
     response_html = router.build_response(env)
 
     [200, headers, [response_html]]
+  rescue => e
+    logger.add(Logger::ERROR, 'Something went wrong', e)
+  
+    [400, headers, ["Error: #{e.message}"]]
   end
 
   private
