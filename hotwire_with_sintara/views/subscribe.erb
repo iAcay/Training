@@ -1,0 +1,13 @@
+<turbo-stream action="replace" target="subscriber-notification">
+  <template>
+    <div id="subscriber-notification">
+      <%= @name %> has subscribed!
+    </div>
+  </template>
+</turbo-stream>
+
+<turbo-stream action="append" target="subscriber-list">
+  <template>
+    <li><%= params[:name] %></li>
+  </template>
+</turbo-stream>
