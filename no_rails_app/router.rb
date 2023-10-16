@@ -1,5 +1,4 @@
 require 'singleton'
-require_relative 'controllers/players_controller'
 
 class Router
   include Singleton
