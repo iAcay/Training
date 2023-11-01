@@ -1,0 +1,38 @@
+body {
+  background-color: rgb(14, 83, 14);
+  margin: auto;
+  width: 300px; 
+  padding: 100px;
+  background-size: cover;
+  color: white;
+  font-family: 'Monaco';
+  text-align: center;
+}
+
+h1 {
+  color: goldenrod;
+  font-size: 60px;
+}
+
+p {
+  font-size: 20px;
+}
+
+#message-el {
+  font-style: italic;
+}
+
+button {
+  border: none;
+  background-color: goldenrod;
+  color: #016f32;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  width: 200px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
