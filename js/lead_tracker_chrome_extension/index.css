@@ -5,16 +5,18 @@ body {
   min-width: 400px;
 }
 
-#input-btn {
-  background-color: green;
+button {
+  background: green;
   color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-weight: bold;
+  padding: 10px 20px;
+  border: 1px solid green;
   border-radius: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 120px;
+  font-weight: bold;
+}
+
+#delete-btn {
+  background: white;
+  color: green;
 }
 
 input {
@@ -38,5 +40,5 @@ li {
 }
 
 li a {
-  color: #5f9341;
+  color: green;
 }
