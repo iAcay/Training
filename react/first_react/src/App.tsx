@@ -5,7 +5,7 @@ function App() {
 
   return (
     <div>
-      <ListGroup items={items} heading="Cities"/>
+      <ListGroup items={items} heading="Cities" onSelectItem={(item) => console.log(item) }/>
     </div>
   )
 }
